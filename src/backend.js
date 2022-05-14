@@ -2,7 +2,7 @@ export const Backend = [
     {
         number: 1,
         question: "You’re really busy at work and a colleague is telling you their life story and personal woes. You:",
-        answer: [
+        answers: [
             {
                 option: "a",
                 text: "Don’t dare to interrupt them"
@@ -24,7 +24,7 @@ export const Backend = [
     {
         number: 2,
         question: "You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You:",
-        answer: [
+        answers: [
             {
                 option: "a",
                 text: "Look at your watch every two minutes"
@@ -46,7 +46,7 @@ export const Backend = [
     {
         number: 3,
         question: "You’re having an animated discussion with a colleague regarding a project that you’re in charge of. You:",
-        answer: [
+        answers: [
             {
                 option: "a",
                 text: "Don’t dare contradict them"
@@ -68,7 +68,7 @@ export const Backend = [
     {
         number: 4,
         question: "You are taking part in a guided tour of a museum. You:",
-        answer: [
+        answers: [
             {
                 option: "a",
                 text: "Are a bit too far towards the back so don’t really hear what the guide is saying"
@@ -90,7 +90,7 @@ export const Backend = [
     {
         number: 5,
         question: "During dinner parties at your home, you have a hard time with people who:",
-        answer: [
+        answers: [
             {
                 option: "a",
                 text: "Ask you to tell a story in front of everyone else"
@@ -112,7 +112,7 @@ export const Backend = [
     {
         number: 6,
         question: "You crack a joke at work, but nobody seems to have noticed. You:",
-        answer: [
+        answers: [
             {
                 option: "a",
                 text: "Think it’s for the best — it was a lame joke anyway"

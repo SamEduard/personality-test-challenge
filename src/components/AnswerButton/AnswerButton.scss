@@ -1,0 +1,44 @@
+.answer {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid rgb(61, 61, 61);
+    background-color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+    &--selected {
+        border: 1px solid rgb(247, 83, 110);
+        &:hover {
+            cursor: default;
+            background-color: white;
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__option {
+        margin-right: 20px;
+        background-color: rgba(190, 190, 190, 0.5);
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        border-radius: 2px;
+        &--selected {
+           background-color:  rgb(247, 83, 110);
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        text-align: left;
+    }
+}
