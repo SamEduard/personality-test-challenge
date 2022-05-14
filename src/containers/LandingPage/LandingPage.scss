@@ -1,32 +1,30 @@
 .landing-page {
-    background-color: rgba(0, 0, 0, 0.35);
-    color: white;
     width: 100%;
     max-width: 600px;
+    background-color: rgba(228, 228, 228, 1);
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
     height: 300px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    border-radius: 16px;
-    box-shadow: 0px 1px 3px 1px black;
     h1 {
         margin: 0;
     }
 
     .start-test {
         color: white;
-        background-color: rgb(164, 231, 164);
+        background-color: rgb(143, 127, 238);
         text-decoration: none;
         color: black;
         font-weight: bold;
         padding: 20px;
-        border-radius: 20px;
+        border-radius: 12px;
         width: 50%;
 
         &:hover {
-            background-color: rgb(141, 231, 141);
-            color: rgba(0, 0, 0, 0.5);
+            background-color: rgb(169, 155, 248);
             transition: .3s;
         }
     }

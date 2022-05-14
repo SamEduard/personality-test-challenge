@@ -23,6 +23,9 @@ export const TestPage = () => {
                     />)
                 }
             </div>
+            <button className='next-question-button'> 
+                Next question &gt;
+            </button>
         </div>
     )
 }
