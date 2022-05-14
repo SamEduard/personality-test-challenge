@@ -1,9 +1,16 @@
+import { Route, Routes } from 'react-router';
 import './App.scss';
+import { LandingPage } from './containers/LandingPage/LandingPage';
+import { TestPage } from './containers/TestPage/TestPage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Personality Test</h1>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/test" element={<TestPage />} />
+        <Route path="/result" element={<LandingPage />} />
+      </Routes>
     </div>
   );
 }
