@@ -1,3 +1,13 @@
+# About the challenge
+Build a simple personality test application, that takes 3-5 different questions, maps them into a score and produces a personality trait of either Introvert or Extrovert.
+
+An example could be:
+
+- Landing screen
+- Start personality test
+- Dynamic screen, that reads question and answers from a the backend (Just mock the backend)
+- Finish screen, where you can see your personality trait.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
