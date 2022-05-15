@@ -21,6 +21,7 @@
         border-bottom: 1px solid rgb(187, 187, 187);
         margin: 10px 0;
         padding: 10px 0;
+        width: 100%;
     }
 
     .next-question-button {
@@ -37,6 +38,15 @@
         &:hover {
             cursor: pointer;
             background-color: rgb(77, 88, 235)
+        }
+
+        &:disabled {
+            opacity: .4;
+
+            &:hover {
+                cursor: default;
+                background-color: rgb(94, 104, 238);
+            }
         }
     }
 }
