@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import "./AnswerButton.scss";
 
 export const AnswerButton = ({option, answer, selectedAnswer, clickedAnswer}) => {

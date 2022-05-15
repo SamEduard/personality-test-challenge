@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router';
 
 import { LandingPage } from './containers/LandingPage/LandingPage';
-import { ResultPage, ResultsPage } from './containers/ResultPage/ResultsPage';
+import { ResultsPage } from './containers/ResultPage/ResultsPage';
 import { TestPage } from './containers/TestPage/TestPage';
 
 import './App.scss';

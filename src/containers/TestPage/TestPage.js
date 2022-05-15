@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router';
 
 import { Backend } from "../../backend";
@@ -14,7 +14,7 @@ export const TestPage = () => {
     const [selectedAnswer, setSelectedAnswer] = useState();
 
     const navigate = useNavigate();
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     const questionNr = parseInt(useParams().nr);
 
