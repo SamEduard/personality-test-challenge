@@ -1,7 +1,11 @@
 import { Route, Routes } from 'react-router';
-import './App.scss';
+
 import { LandingPage } from './containers/LandingPage/LandingPage';
+import { ResultPage, ResultsPage } from './containers/ResultPage/ResultsPage';
 import { TestPage } from './containers/TestPage/TestPage';
+
+import './App.scss';
+import './utils.scss';
 
 function App() {
   return (
@@ -9,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/test/:nr" element={<TestPage />} />
-        <Route path="/result" element={<LandingPage />} />
+        <Route path="/result" element={<ResultsPage />} />
       </Routes>
     </div>
   );

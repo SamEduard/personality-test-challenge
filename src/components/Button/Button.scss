@@ -1,0 +1,25 @@
+.button {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background-color: rgb(94, 104, 238);
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(77, 88, 235);
+    }
+
+    &:disabled {
+        opacity: 0.4;
+
+        &:hover {
+            cursor: default;
+            background-color: rgb(94, 104, 238);
+        }
+    }
+}
