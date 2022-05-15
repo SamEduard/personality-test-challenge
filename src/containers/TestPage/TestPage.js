@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router';
+
 import { Backend } from "../../backend";
 import { AnswerButton } from '../../components/AnswerButton/AnswerButton';
 import { Button } from '../../components/Button/Button';
+
+import {incrementByAmount} from "../../redux/answersPointsSlice";
 
 import "./TestPage.scss";
 
@@ -10,13 +14,18 @@ export const TestPage = () => {
     const [selectedAnswer, setSelectedAnswer] = useState();
 
     const navigate = useNavigate();
+    const dispatch = useDispatch()
+
     const questionNr = parseInt(useParams().nr);
 
     const questionData = Backend[questionNr - 1];
+
     const nextQuestionHandler = () => {
         setSelectedAnswer();
+        const points = questionData.answers.filter(answer => answer.option === selectedAnswer)[0].points;
+        dispatch(incrementByAmount(points));
+
         if(questionNr < 6) {
-            //Add logic to sum points
             navigate(`/test/${questionNr + 1}`);
         } else {
             navigate("/result");
